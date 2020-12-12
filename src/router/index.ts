@@ -7,6 +7,10 @@ const routes: Array<RouteRecordRaw> = [
     redirect: '/folder/Inbox'
   },
   {
+    path: '/usuarios',
+    component: () => import('../views/Usuarios.vue')
+  },
+  {
     path: '/folder/:id',
     component: () => import ('../views/Folder.vue')
   }
